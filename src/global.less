@@ -1,0 +1,230 @@
+@import '~ant-design-vue/es/style/themes/default.less';
+
+html,
+body,
+#app,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout.layout-basic {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// 数据列表 样式
+.table-alert {
+  margin-bottom: 16px;
+}
+// 数据列表 操作
+.table-operator {
+  margin-bottom: 18px;
+
+  button {
+    margin-right: 8px;
+  }
+}
+.table-page-search-wrapper-custom {
+  .ant-form-inline {
+    .ant-form-item {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 12px;
+      .ant-form-item-control-wrapper {
+        flex: 1 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .ant-form-item-control {
+        height: 32px;
+        line-height: 32px;
+      }
+      .ant-form-item-label{
+        line-height: 32px;
+      }
+    }
+  }
+  .button {
+    text-align: center;
+    .ant-btn + .ant-btn {
+      margin-left: 10px;
+    }
+  }
+}
+// 数据列表 搜索条件
+.table-page-search-wrapper {
+  .ant-form-inline {
+    .ant-form-item {
+      display: flex;
+      margin-bottom: 16px;
+      margin-right: 0;
+
+      .ant-form-item-control-wrapper {
+        flex: 1 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      > .ant-form-item-label {
+        line-height: 32px;
+        padding-right: 8px;
+        width: auto;
+      }
+      .ant-form-item-control {
+        height: 32px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .table-page-search-submitButtons {
+    display: block;
+    margin-bottom: 24px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.qualificationCertificate .ant-btn:focus:not(.ant-btn-primary):not(.ant-btn-danger),
+.qualificationCertificate .ant-btn:hover:not(.ant-btn-primary):not(.ant-btn-danger) {
+  color: #ffffff;
+}
+.ant-btn-custom {
+  color: #ff8929;
+  background-color: #fff;
+  border-color: #ff8929;
+}
+
+.buttons {
+  .ant-btn + .ant-btn {
+    margin-left: 20px;
+  }
+}
+
+// tree-select
+.vue-treeselect {
+  &__placeholder {
+    height: 32px;
+  }
+  &__control {
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    line-height: 12px;
+    height: 32px;
+  }
+  &--focused {
+    .vue-treeselect__control {
+      border-color: var(--themeColor);
+    }
+  }
+  &--has-value.collaps-tags {
+    .vue-treeselect__multi-value {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      -webkit-text-overflow: ellipsis;
+      -moz-text-overflow: ellipsis;
+      white-space: nowrap;
+      height: 24px;
+    }
+  }
+}
+.ant-tree {
+  .ant-tree-node-content-wrapper {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+.contract-preview-dom {
+  .ant-table {
+    font-size: 9px;
+  }
+  .ant-table-small {
+    border-top: none;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-collapse: collapse
+  }
+  .ant-table-thead {
+    border-top: 1px solid #000;
+    border-collapse: collapse
+  }
+  .ant-table-bordered .ant-table-thead > tr > th{
+    border-top: 1px solid #000;
+    border-bottom: none;
+    border-right: 1px solid #000;
+    border-collapse: collapse
+  }
+  .ant-table-bordered .ant-table-tbody > tr > td {
+    border-top: 1px solid #000;
+    border-bottom: none;
+    border-right: 1px solid #000;
+    border-collapse: collapse
+  }
+
+  .ant-table-bordered .ant-table-tbody > .ant-table-row {
+    border-bottom: 1px solid #000;
+    border-collapse: collapse
+  }
+
+  
+  .ant-table-small.ant-table-bordered .ant-table-footer {
+    border-top: 1px solid #000;
+    border-collapse: collapse
+  }
+  .ant-table-small > .ant-table-content > .ant-table-body {
+    margin: 0;
+  }
+  .ant-table-small.ant-table-bordered .ant-table-content{
+    border-right: none;
+  }
+  .table-footer {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .l {
+      span {
+        margin-right: 40px;
+      }
+    }
+  }
+}

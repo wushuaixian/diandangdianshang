@@ -1,0 +1,25 @@
+.head-title {
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: #262626;
+  line-height: 20px;
+  padding-bottom: 8px;
+  font-weight: 500;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & > span {
+    display: inline-flex;
+    align-items: center;
+    &::before {
+      content: ' ';
+      display: inline-block;
+      width: 4px;
+      height: 16px;
+      background-image: linear-gradient(-180deg, #ff8323 0%, #ff663e 100%);
+      margin-right: 8px;
+      border-radius: 2px;
+    }
+  }
+}

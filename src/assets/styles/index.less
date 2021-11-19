@@ -1,0 +1,37 @@
+@import url('./ant-design-vue.less');
+
+.s-table {
+  .customTitle {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '*';
+      color: red;
+      margin-right: 5px;
+    }
+  }
+}
+// 数据字典查看页面表格样式问题修复--scroll和自定义表头同时存在引起
+.detail-box {
+  .ant-table-fixed-left {
+    height: 100%;
+    .ant-table-body-outer {
+      height:100%;
+      .ant-table-fixed {
+        height:100%;
+      }
+    }
+    .ant-table-body-inner {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
+      -ms-overflow-style: none; /* IE 10+ */
+      td.ant-table-row-cell-ellipsis,
+      .ant-table-row-cell-break-word {
+        margin: 0;
+      }
+      
+    }
+  }
+}

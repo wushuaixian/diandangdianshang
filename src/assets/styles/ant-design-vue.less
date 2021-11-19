@@ -1,0 +1,69 @@
+.ant-btn-primary {
+  background-image: linear-gradient(-270deg, #ff9336 0%, #ff6b00 100%);
+  border-radius: 2px;
+  border-color: #fff;
+  border-radius: 4px;
+}
+.ant-btn {
+  min-width: 80px;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  color: #fff;
+  background-image: linear-gradient(-270deg, #ff9336 0%, #ff6b00 100%);
+  border-color: #fff;
+}
+
+.ant-btn-primary:disabled {
+  background: #dddddd;
+}
+
+.ant-modal-header {
+  background: #f9f9f9;
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: none;
+}
+.ant-pro-basicLayout {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .sidemenu {
+    position: relative;
+  }
+  .ant-layout-content {
+    overflow: auto;
+    flex: 1;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    .ant-pro-basicLayout-children-content-wrap {
+      padding: 24px;
+    }
+  }
+  .ant-layout-footer {
+    padding: 0;
+  }
+  .ant-layout-sider-children {
+    .ant-menu-root {
+      overflow: auto;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+.button {
+  .ant-btn + .ant-btn {
+    margin-left: 16px;
+  }
+}
+// .ant-layout-content {
+//   overflow: auto;
+// }

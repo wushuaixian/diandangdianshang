@@ -1,0 +1,342 @@
+.work-space {
+  .isPerfect {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    min-width: 1000px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+
+    .payBtn {
+      position: absolute;
+      right: 15px;
+      // bottom: 15px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+
+    .left,
+    .right {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 30px 24px;
+      display: flex;
+      justify-content: space-between;
+
+      .head {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        span {
+          font-size: 16px;
+          color: #262626;
+        }
+
+        a {
+          font-size: 14px;
+          color: #666666;
+        }
+      }
+    }
+
+    .left {
+      flex: 1;
+
+      .company {
+        display: flex;
+        align-items: center;
+
+        .avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+
+        .enterprise {
+          margin-left: 20px;
+
+          .status {
+            &>span {
+              &:first-child {
+                font-size: 16px;
+                color: #262626;
+              }
+            }
+
+            .ant-btn {
+              margin-left: 12px;
+            }
+          }
+
+          .name {
+            font-size: 14px;
+            color: #666666;
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .service {
+        display: flex;
+
+        .ant-divider {
+          height: 100%;
+        }
+
+        .box {
+          padding-left: 15px;
+
+          .head {
+            a {
+              margin-left: 100px !important;
+            }
+          }
+
+          .btn {
+            margin-top: 16px;
+
+            a {
+              margin-left: 8px;
+            }
+
+            .ant-btn-primary {
+              text-shadow: 0 1px 1px rgba(135, 57, 0, 0.4);
+              font-size: 14px;
+              color: #ffffff;
+              letter-spacing: 0.88px;
+            }
+
+            .crown-icon {
+              width: 20px;
+              height: 16px;
+            }
+          }
+
+          .time {
+            font-size: 14px;
+            margin-top: 14px;
+            color: #262626;
+
+            a {
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      margin-left: 24px;
+      min-width: 318px;
+      flex-flow: column;
+      justify-content: end;
+
+      .content {
+        overflow: auto;
+        max-height: 100px;
+
+        p {
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:first-child {
+            margin-top: 14px;
+          }
+
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .container {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px;
+    margin-top: 20px;
+
+    .card-info {
+      background: #ffffff;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px 16px;
+      display: flex;
+
+      img {
+        width: auto;
+        height: 80px;
+      }
+
+      .message {
+        display: inline-flex;
+        flex-flow: column;
+      }
+    }
+  }
+
+  .enterprise-card,
+  .number-card {
+    display: flex;
+
+    .card-info {
+      width: 32%;
+      margin-left: 23px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .message {
+        margin-left: 21px;
+
+        span {
+          &:first-child {
+            font-size: 16px;
+            color: #262626;
+            font-weight: 600;
+          }
+
+          &:nth-child(2) {
+            font-size: 12px;
+            color: #696969;
+            margin-top: 8px;
+          }
+        }
+
+        .btn {
+          margin-top: 4px;
+          display: inline-flex;
+          justify-content: space-between;
+          font-size: 14px;
+          color: #ff6b00;
+          font-weight: 600;
+          align-items: center;
+
+          .ant-btn-primary {
+            background: #ff6b00;
+          }
+
+          // a {
+          //   font-size: 12px;
+          //   color: #666666;
+          // }
+        }
+      }
+    }
+  }
+
+  .number-card {
+    display: flex;
+    justify-content: space-between;
+
+    .card-info {
+      background: #fff3ea;
+      border-radius: 8px;
+      align-items: center;
+
+      & .message {
+        .title {
+          font-size: 16px;
+          color: #696969;
+        }
+
+        .num {
+          font-size: 40px;
+          color: #262626;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .todo-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .performance {
+      margin-top: 20px;
+      padding: 22px 20px;
+      width: 49%;
+      border-radius: 8px;
+      background: #ffffff;
+
+      .title {
+        display: flex;
+        align-items: center;
+
+        .line {
+          background-image: linear-gradient(-179deg, #ff8720 0%, #ff6241 100%);
+          border-radius: 2px;
+          width: 4px;
+          height: 16px;
+          margin-right: 8px;
+        }
+
+        font-size: 16px;
+        color: #262626;
+        font-weight: 500;
+      }
+
+      .icon-list {
+        width: 100%;
+        margin-top: 14px;
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        .icon {
+          width: 50%;
+          margin-top: 10px;
+
+          img {
+            width: 56px;
+            height: 56px;
+          }
+
+          a {
+            margin-left: 12px;
+            font-size: 14px;
+            color: #262626;
+
+            span {
+              color: #ff6b00;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /deep/.ant-spin .ant-spin-dot {
+    display: none;
+  }
+}
+
+.progress {
+  .ant-form {
+    margin-top: 30px;
+
+    .ant-input {
+      width: 200px;
+    }
+  }
+}
